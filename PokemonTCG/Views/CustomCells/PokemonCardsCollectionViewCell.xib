@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="PokemonCardsCollectionViewCell" id="gTV-IL-0wX" customClass="PokemonCardsCollectionViewCell" customModule="PokemonTCG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="296"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="296"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Z-NF-0jL">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="296"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3J-AM-W1w">
+                                <rect key="frame" x="8" y="8" width="172" height="248"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjw-mf-v9y">
+                                <rect key="frame" x="8" y="264" width="172" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="x5A-07-zVm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Bjw-mf-v9y" secondAttribute="bottom" constant="8" id="9mb-uY-CtW"/>
+                            <constraint firstAttribute="trailing" secondItem="Bjw-mf-v9y" secondAttribute="trailing" constant="8" id="CEH-Ps-5hS"/>
+                            <constraint firstItem="h3J-AM-W1w" firstAttribute="leading" secondItem="Z6Z-NF-0jL" secondAttribute="leading" constant="8" id="FbX-Lo-E2J"/>
+                            <constraint firstItem="Bjw-mf-v9y" firstAttribute="leading" secondItem="Z6Z-NF-0jL" secondAttribute="leading" constant="8" id="J0Z-hM-6F2"/>
+                            <constraint firstAttribute="trailing" secondItem="h3J-AM-W1w" secondAttribute="trailing" constant="8" id="NKu-Dm-dax"/>
+                            <constraint firstItem="h3J-AM-W1w" firstAttribute="top" secondItem="Z6Z-NF-0jL" secondAttribute="top" constant="8" id="QIr-aa-ntT"/>
+                            <constraint firstItem="Bjw-mf-v9y" firstAttribute="top" secondItem="h3J-AM-W1w" secondAttribute="bottom" constant="8" id="Rrs-BP-fIe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Z6Z-NF-0jL" secondAttribute="trailing" id="5kJ-aN-6Tf"/>
+                <constraint firstItem="Z6Z-NF-0jL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="H21-M0-S15"/>
+                <constraint firstAttribute="bottom" secondItem="Z6Z-NF-0jL" secondAttribute="bottom" id="Nzy-Hc-dSQ"/>
+                <constraint firstItem="Z6Z-NF-0jL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ywl-Hf-iy5"/>
+            </constraints>
+            <size key="customSize" width="188" height="296"/>
+            <connections>
+                <outlet property="cardName" destination="Bjw-mf-v9y" id="slY-ow-Jhb"/>
+                <outlet property="cardView" destination="h3J-AM-W1w" id="1kJ-Gz-Lzm"/>
+                <outlet property="containerView" destination="Z6Z-NF-0jL" id="aE6-vi-N4T"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="135.9375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
